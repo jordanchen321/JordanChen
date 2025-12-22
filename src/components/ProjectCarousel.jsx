@@ -14,7 +14,7 @@ export default function ProjectCarousel() {
       year: "2025", 
       description:
         "This project focused on collecting, cleaning, and analyzing multi-source anime data to study how factors such as view counts, genre, and pre-adaptation manga sales influence award outcomes. A predictive model with supporting visualizations was built to clearly present patterns and insights.", 
-      image: "/projectImage/test.jpg",
+      image: "/public/projectImage/test.jpg",
       github: "https://github.com/jordanchen321/CrunchyRoll-Award-Factor-Analysis.git"
     },
     { 
@@ -22,12 +22,12 @@ export default function ProjectCarousel() {
       year: "2025", 
       description:
         "This project used over 45,000 data points from the UCI Machine Learning Repository to train a machine learning model that predicts whether a customer will subscribe to a term deposit. The model achieved 91% accuracy by leveraging demographic and financial features with tools such as Scikit-learn, Pandas, and NumPy.", 
-      image: "/projectImage/test.jpg",
+      image: "/public/projectImage/test.jpg",
       github: "https://github.com/jordanchen321/Term_Deposit_Predictor.git"
     },
-    { title: "Pending...", year: "2025", description: "TBD", image: "/projectImage/test.jpg" },
-    { title: "Pending...", year: "2025", description: "TBD", image: "/projectImage/test.jpg" },
-    { title: "Pending...", year: "2025", description: "TBD", image: "/projectImage/test.jpg" }
+    { title: "Pending...", year: "2025", description: "TBD", image: "/public/projectImage/test.jpg" },
+    { title: "Pending...", year: "2025", description: "TBD", image: "/public/projectImage/test.jpg" },
+    { title: "Pending...", year: "2025", description: "TBD", image: "/public/projectImage/test.jpg" }
   ];
 
   useEffect(() => {
@@ -113,3 +113,4 @@ export default function ProjectCarousel() {
     </section>
   );
 }
+
