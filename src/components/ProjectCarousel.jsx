@@ -25,7 +25,7 @@ export default function ProjectCarousel() {
       image: "/public/projectImage/test.jpg",
       github: "https://github.com/jordanchen321/Term_Deposit_Predictor.git"
     },
-    { title: "Pending...", year: "2025", description: "TBD", image: "/public/projectImage/test.jpg" },
+    { title: "Pending...", year: "2025", description: "TBD", image: "/JordanChen/projectImage/test.jpg" },
     { title: "Pending...", year: "2025", description: "TBD", image: "/public/projectImage/test.jpg" },
     { title: "Pending...", year: "2025", description: "TBD", image: "/public/projectImage/test.jpg" }
   ];
@@ -113,4 +113,5 @@ export default function ProjectCarousel() {
     </section>
   );
 }
+
 
