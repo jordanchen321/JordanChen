@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  output: "export", // required for GitHub Pages
+  output: "export",
+  basePath: "/JordanChen",
+  assetPrefix: "/JordanChen/",
   images: {
-    unoptimized: true, // required for static export
+    unoptimized: true,
   },
 };
 
