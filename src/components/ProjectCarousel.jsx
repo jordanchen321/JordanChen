@@ -21,7 +21,7 @@ export default function ProjectCarousel() {
       title: "Term Deposit Subscription Predictor", 
       year: "2025", 
       description:
-        "This project used over 45,000 data points from the UCI Machine Learning Repository to train a machine learning model that predicts whether a customer will subscribe to a term deposit. The model achieved 91% accuracy by leveraging demographic and financial features with tools such as Scikit-learn, Pandas, and NumPy.", 
+        "Using 45,000+ UCI ML data points, this project trained a model to predict customer term deposit subscriptions, achieving 91% accuracy with demographic and financial features via Scikit-learn, Pandas, and NumPy.", 
       image: "/projectImage/test.jpg",
       github: "https://github.com/jordanchen321/Term_Deposit_Predictor.git"
     },
@@ -113,6 +113,7 @@ export default function ProjectCarousel() {
     </section>
   );
 }
+
 
 
 
