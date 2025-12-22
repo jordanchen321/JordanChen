@@ -1,0 +1,26 @@
+body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: rgb(10, 10, 10);
+  overflow-x: hidden
+}
+
+.page-fade {
+  opacity: 0;
+  transform: translateY(20px); 
+  animation: fadeInPage 1s ease forwards;
+  animation-delay: 0.2s; 
+}
+
+@keyframes fadeInPage {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none; 
+}
+
