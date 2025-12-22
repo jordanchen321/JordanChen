@@ -40,7 +40,8 @@ export default function Intro() {
   return (
     <div className="intro-section">
       <div>
-        <Image className="profile"
+        <Image 
+          className="profile"
           alt = ""
           src="/profile.jpg"
           width={300}
