@@ -340,6 +340,8 @@
     gap: 10rem; 
     padding: 0 1rem;
     max-height: 80vh;
+    overflow-x: hidden; /* Hides the horizontal scrollbar */
+    max-width: 100%;
   }
 
   .carousel-track {
