@@ -42,7 +42,7 @@ export default function Intro() {
       <div>
         <Image className="profile"
           alt = ""
-          src="/profile.jpg"
+          src="/public/profile.jpg"
           width={300}
           height={450}
           priority
@@ -106,3 +106,4 @@ export default function Intro() {
     </div>
   );
 }
+
