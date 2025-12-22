@@ -84,7 +84,7 @@ export default function TiltContact() {
         >
           <a href="https://drive.google.com/file/d/1Kt1S0p7U7tvs3ohvikPvTPWTRB9oAsyr/view?usp=sharing">
             <Image className = "resume"
-              src="/resume.png"
+              src="/JordanChen/resume.png"
               alt="Tilt image"
               width={300}
               height={450}
@@ -96,3 +96,4 @@ export default function TiltContact() {
     </div>
   );
 }
+
