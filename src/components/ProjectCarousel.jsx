@@ -14,7 +14,7 @@ export default function ProjectCarousel() {
       year: "2025", 
       description:
         "This project focused on collecting, cleaning, and analyzing multi-source anime data to study how factors such as view counts, genre, and pre-adaptation manga sales influence award outcomes. A predictive model with supporting visualizations was built to clearly present patterns and insights.", 
-      image: "/JordanChen/projectImage/test.jpg",
+      image: "/projectImage/test.jpg",
       github: "https://github.com/jordanchen321/CrunchyRoll-Award-Factor-Analysis.git"
     },
     { 
@@ -113,6 +113,7 @@ export default function ProjectCarousel() {
     </section>
   );
 }
+
 
 
 
