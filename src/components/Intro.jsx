@@ -75,7 +75,7 @@ export default function Intro() {
 
         <div className="social-icons">
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="hlinkedin.com/in/jordan-chen-586733325"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -91,7 +91,7 @@ export default function Intro() {
           </a>
 
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/jordanchen321"
             target="_blank"
             rel="noopener noreferrer"
           >
