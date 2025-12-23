@@ -1,0 +1,512 @@
+/* [project]/src/app/app.css [app-client] (css) */
+.navbar {
+  position-anchor: fixed;
+  z-index: 1000;
+  background-color: #0a0a0a;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 75px;
+  display: flex;
+  position: sticky;
+  box-shadow: 0 2px 5px #6291ff33;
+}
+
+.logo {
+  color: #345ad6;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  gap: 45px;
+  list-style: none;
+  display: flex;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #345ad6;
+  border-bottom: 2px solid #345ad6;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  opacity: .7;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
+  .nav-links {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+}
+
+.message404 {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.intro-section {
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 150px;
+  display: flex;
+}
+
+.intro {
+  color: #fff;
+  text-align: left;
+  width: 50%;
+}
+
+.intro-words {
+  padding-top: -150px;
+}
+
+.intro-h1 {
+  font-size: 3.25rem;
+}
+
+.intro-h2 {
+  font-size: 2rem;
+}
+
+.intro-content {
+  font-size: 1.2rem;
+}
+
+.blue-text {
+  color: #345ad6;
+}
+
+.cursor {
+  width: 1ch;
+  margin-left: 2px;
+  animation: 1s step-start infinite blink;
+  display: inline-block;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.profile {
+  float: right;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 20rem;
+  height: 27rem;
+  animation: 16s ease-in-out infinite moveGlow;
+  position: relative;
+  box-shadow: 0 0 250px 60px #345ad689, 0 0 140px 70px #8073354a;
+}
+
+@keyframes moveGlow {
+  0% {
+    box-shadow: 0 0 250px 60px #345ad66c, 0 0 150px 70px #8073354a;
+  }
+
+  25% {
+    box-shadow: 0 0 260px 70px #345ad659, 35px -10px 150px 70px #80743533;
+  }
+
+  50% {
+    box-shadow: 0 0 230px 50px #345ad673, -45px 50px 150px 70px #8073354a;
+  }
+
+  75% {
+    box-shadow: 0 0 160px 70px #345ad659, 40px 60px 150px 70px #80743569;
+  }
+
+  100% {
+    box-shadow: 0 0 250px 60px #345ad66c, 0 0 150px 70px #8073354a;
+  }
+}
+
+.social-icons {
+  gap: 10px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.social-icons a {
+  color: #fff;
+}
+
+.social-icons a:hover {
+  color: #345ad6;
+}
+
+.hire-me-btn {
+  color: #345ad6;
+  cursor: pointer;
+  border: 2px solid #345ad6;
+  border-radius: 25px;
+  margin-top: 25px;
+  padding: 5px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-fill {
+  z-index: 0;
+  background-color: #345ad6;
+  width: 0%;
+  height: 100%;
+  transition: width .5s, box-shadow .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 #345ad6;
+}
+
+.hire-me-btn:hover .btn-fill {
+  width: 100%;
+  box-shadow: 0 0 10px #345ad6, 0 0 20px #345ad6, 0 0 30px #345ad6;
+}
+
+.btn-text {
+  z-index: 1;
+  transition: color .3s;
+  position: relative;
+}
+
+.hire-me-btn:hover .btn-text {
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .profile {
+    display: none;
+  }
+
+  .intro {
+    width: 100vw;
+    margin: 1vh 2vw 2vw;
+  }
+
+  .intro-section {
+    justify-content: left;
+    margin-top: 1vh;
+  }
+}
+
+.carousel-section {
+  width: 100vw;
+  margin-top: 10vh;
+  padding: 0;
+}
+
+.carousel {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  position: relative;
+  overflow: auto hidden;
+}
+
+.carousel-track {
+  box-sizing: border-box;
+  align-items: center;
+  gap: 6rem;
+  width: max-content;
+  padding: 0 2rem;
+  display: flex;
+}
+
+.carousel.dragging {
+  cursor: grabbing;
+}
+
+.project-card {
+  flex: 0 0 400px;
+  justify-content: center;
+  display: flex;
+}
+
+.card {
+  background: #506aac90;
+  border-radius: 16px;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  transition: transform .3s, box-shadow .3s;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px #0e6cef66;
+}
+
+.github-icon {
+  color: #fff;
+  opacity: .8;
+  transition: opacity .2s, transform .2s;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.github-icon:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.card:hover {
+  z-index: 10;
+  transform: scale(1.08);
+  box-shadow: 0 25px 60px #0009;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.card-content {
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1.25rem;
+  display: flex;
+}
+
+.card-content h3 {
+  color: #cbd5f5;
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.card-content p {
+  color: #cbd5f5;
+  font-size: .95rem;
+  line-height: 1.5;
+}
+
+.card-year h3 {
+  color: #fff;
+  opacity: .8;
+  transition: opacity .2s, transform .2s;
+  position: absolute;
+  bottom: .3rem;
+  left: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .carousel-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    margin: 40px -10px;
+  }
+
+  .carousel {
+    scroll-behavior: smooth;
+    flex-direction: column;
+    gap: 10rem;
+    max-width: 100%;
+    height: auto;
+    max-height: 80vh;
+    padding: 0 1rem;
+    display: flex;
+    overflow: hidden auto;
+  }
+
+  .carousel-track {
+    flex-direction: column;
+    gap: 6rem;
+    width: 100%;
+    padding: 0;
+    display: flex;
+  }
+
+  .project-card:first-child, .project-card:last-child {
+    margin: 0;
+  }
+
+  .project-card {
+    flex: none;
+    width: 85%;
+  }
+
+  .card {
+    height: 400px;
+  }
+
+  .card img {
+    height: 150px;
+  }
+}
+
+.info {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13vw;
+  margin-top: 15vh;
+  display: flex;
+}
+
+.tilt-wrapper {
+  perspective: 1000px;
+  background-color: #0000;
+  width: 400px;
+  height: 550px;
+  box-shadow: 30px 30px 45px #0e6cef66;
+}
+
+.tilt-card {
+  width: 350px;
+  height: 400px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  transition: transform .15s ease-out;
+}
+
+.resume {
+  width: 400px;
+  height: 550px;
+}
+
+.contact-container {
+  color: #efefff;
+  background: #506aac90;
+  border-radius: 12px;
+  width: 550px;
+  height: 500px;
+  padding: 25px;
+  box-shadow: 15px 15px 40px #0e6cef66;
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.contact-links p {
+  color: #efefff;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.contact-links a {
+  color: #efefff;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+  display: flex;
+}
+
+.contact-form input, .contact-form textarea {
+  resize: none;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  color: #000;
+  cursor: pointer;
+  background: #3298ff;
+  border: none;
+  border-radius: 6px;
+  width: 30%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-weight: bold;
+  display: block;
+}
+
+.contact-form button:hover {
+  background: #39f;
+}
+
+.submit-popup {
+  text-align: center;
+  color: #000;
+  background: #53ff9285;
+  border: none;
+  border-radius: 6px;
+  width: 20%;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-weight: bold;
+  animation: 3s forwards fadeInOut;
+  display: block;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tilt-wrapper, .tilt-card, .resume {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-container {
+    width: 80vw;
+  }
+}
+
+/*# sourceMappingURL=src_app_app_css_bad6b30c._.single.css.map*/
