@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/globals.css"],"sourcesContent":["body, #root {\r\n  margin: 0;\r\n  padding: 0;\r\n  min-height: 100vh;\r\n  background-color: rgb(10, 10, 10);\r\n  overflow-x: hidden\r\n}\r\n\r\n.page-fade {\r\n  opacity: 0;\r\n  transform: translateY(20px); \r\n  animation: fadeInPage 1s ease forwards;\r\n  animation-delay: 0.2s; \r\n}\r\n\r\n@keyframes fadeInPage {\r\n  to {\r\n    opacity: 1;\r\n    transform: translateY(0);\r\n  }\r\n}\r\n\r\nbody::-webkit-scrollbar {\r\n  display: none; \r\n}\r\n\r\n"],"names":[],"mappings":"AAAA;;;;;;;;AAQA;;;;;;AAOA;;;;;;;AAOA"}}]
-}
